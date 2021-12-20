@@ -89,6 +89,26 @@ $(document).ready(function () {
 		}
 	})
 
+	$('.imagen-min7').on({
+		'mouseover': function(){
+			var tituloText = $('.titulo-7').text();
+			var resumenText = $('.resumen-7').text();
+			$('.contenido-principal__imagen').attr('src','img/07.jpg');
+			$('.contenido-principal__titulo').text(tituloText);
+			$('.contenido-principal__resumen').text(resumenText);
+		}
+	})
+
+	$('.imagen-min8').on({
+		'mouseover': function(){
+			var tituloText = $('.titulo-8').text();
+			var resumenText = $('.resumen-8').text();
+			$('.contenido-principal__imagen').attr('src','img/08.jpg');
+			$('.contenido-principal__titulo').text(tituloText);
+			$('.contenido-principal__resumen').text(resumenText);
+		}
+	})
+
 });
 
 //-- TITULO --//
