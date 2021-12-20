@@ -137,11 +137,11 @@ function change() {
 
 var dialogs = {
     value0: function() {
-        texts = "Noticias";
+        texts = "Estamos...";
         timer = 100;
     },
     value1: function() {
-        texts = "KONECTA";
+        texts = "KONECTADOS!";
         timer = 100;
     },
 };
@@ -178,7 +178,7 @@ function type() {
                 clearInterval(writes);
                 return up();
             }
-            setTimeout(type, 1000);
+            setTimeout(type, 500);
             return;
         }
         dialog.innerHTML += Letters[positionLetter];
