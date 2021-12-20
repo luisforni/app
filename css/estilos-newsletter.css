@@ -1,0 +1,243 @@
+* {
+	box-sizing: border-box;
+}
+
+.noticias-konecta{
+	padding-left: 150px;
+	font-size: 28px;
+	text-shadow: #000 3px 3px 5px;
+	height: 25px;
+}
+
+body {
+	background: #032556;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	*display: flex;
+	align-items: center;
+}
+
+.menu {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 95%;
+	margin: auto;
+}
+
+.imagen-principal {
+	position: relative;
+	width: 100%;
+}
+
+.contenido-principal {
+	*margin-bottom: 20px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 100%;
+	max-width: 100%;
+	filter: brightness(75%);
+}
+
+.contenido-principal__contenedor {
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	bottom: 50px;
+	right: 50px;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	padding-right: 100px;
+	text-shadow: #000 1px 1px 5px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+	padding-bottom: 1px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+	font-style: italic;
+	padding-right: 100px;
+	text-shadow: #000 1px 1px 5px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    overflow: hidden;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin: auto;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.contenido-principal__imagen {
+	width: 100%;
+	height: 350px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+img {
+	width: 600px;
+	height: 100px;
+	margin-bottom: 0px;
+	object-fit: cover;
+	opacity: 100%;
+	filter: brightness(80%);
+	transition: all 1000ms;
+}
+
+img:hover{
+	filter: brightness(30%);
+	transition: all 1000ms;
+}
+
+.carousel__elemento {
+	text-align:left;
+	position: relative;
+}
+
+.carousel__elemento:hover .texto__carousel{
+	opacity: 100%;
+	color:#fff;
+	font-weight: bold;
+	transition: all 500ms;
+	background: none;
+	text-shadow: #000 1px 1px 5px;
+}
+
+.texto__carousel{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	*bottom: 5px;
+	right: 5px;
+	font-weight: bold;
+	opacity: 95%;
+	transition: all 500ms;
+	text-shadow: #000 1px 1px 5px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+	padding-bottom: 0px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+
+.resumen-x1{
+	display: none;
+}
+.resumen-x2{
+	display: none;
+}
+.resumen-1{
+	display: none;
+}
+.resumen-2{
+	display: none;
+}
+.resumen-3{
+	display: none;
+}
+.resumen-4{
+	display: none;
+}
+.resumen-5{
+	display: none;
+}
+.resumen-6{
+	display: none;
+}
